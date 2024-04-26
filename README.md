@@ -1,3 +1,25 @@
+
+ ## 按需添加依赖
+        <dependency>
+            <groupId>io.github.javpower</groupId>
+            <artifactId>sms-ali</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.javpower</groupId>
+            <artifactId>sms-tencent</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.javpower</groupId>
+            <artifactId>email-smtp</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+
+
+## 使用例子
+
     @Component
     @Order(value = 1)//执行顺序
     public class TestRun implements ApplicationRunner {
@@ -92,4 +114,4 @@
 				.send();
 	}
 
-}
+    }
